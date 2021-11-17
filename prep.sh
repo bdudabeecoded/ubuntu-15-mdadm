@@ -2,8 +2,8 @@
 
 set -e
 
-sed -i 's/archive/old-releases/' /etc/apt/sources.list
-sed -i 's/security/old-releases/' /etc/apt/sources.list
+sed -i 's/\/archive\./\/old-releases\./' /etc/apt/sources.list
+sed -i 's/\/security\./\/old-releases\./' /etc/apt/sources.list
 
 apt-get update
 
