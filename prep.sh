@@ -16,6 +16,6 @@ cat /proc/mdstat
 set +e
 
 for i in {1..4}; do
-  mkdir -p /mnt/volume_${i}
-  mount -o ro /dev/vg1/volume_${i} /mnt/volume_${i}
+  mkdir -p /mnt/volume_$i
+  mount -o ro /dev/vg1/volume_$i /mnt/volume_$i
 done
